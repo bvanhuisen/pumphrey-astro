@@ -1,0 +1,8 @@
+---
+const items = Astro.props.items ?? [];
+---
+<div class="proof-bar" aria-label="Pumphrey and Co. credentials">
+  <div class="shell proof-row">
+    {items.map((item) => <div class="proof-item">{item}</div>)}
+  </div>
+</div>

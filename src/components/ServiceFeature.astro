@@ -1,0 +1,14 @@
+---
+const { number, title, text, href, image, alt, label } = Astro.props;
+---
+<article class="service-feature">
+  <a href={href} class="service-image-link" aria-label={`View ${title}`}>
+    <img src={image} alt={alt} loading="lazy" />
+  </a>
+  <div class="service-copy">
+    <div class="service-kicker"><span>{number}</span>{label}</div>
+    <h3><a href={href}>{title}</a></h3>
+    <p>{text}</p>
+    <a class="text-link" href={href}>View full page</a>
+  </div>
+</article>

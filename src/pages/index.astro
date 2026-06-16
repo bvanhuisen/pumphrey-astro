@@ -1,17 +1,116 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import ProofBar from '../components/ProofBar.astro';
+import ServiceFeature from '../components/ServiceFeature.astro';
+import GalleryPreview from '../components/GalleryPreview.astro';
 
+const proofItems = [
+  'Concours-Level Work',
+  'Prewar to 1970s',
+  'Rare Cars, Real Solutions',
+  'For Serious Collectors',
+];
+
+const serviceFeatures = [
+  {
+    number: '01',
+    label: 'Engine room',
+    title: 'Engine & Machine Work',
+    href: '/engine-machine-work/',
+    image: '/images/machine-detail.jpg',
+    alt: 'Close-up of a yellow machine tool in the Pumphrey and Co. workshop',
+    text: 'Engine machining, Babbitt bearing work, CNC components, and mechanical problem-solving for cars whose parts are no longer on a shelf.',
+  },
+  {
+    number: '02',
+    label: 'Metal work',
+    title: 'Restoration & Fabrication',
+    href: '/restoration-fabrication/',
+    image: '/images/shop-bench.jpg',
+    alt: 'Workbenches and mechanical parts inside the Pumphrey and Co. shop',
+    text: 'Mechanical restoration, fabrication, TIG, MIG, brazing, and difficult metal repair where the finish depends on the work underneath.',
+  },
+  {
+    number: '03',
+    label: 'Unusual jobs',
+    title: 'Specialty Services',
+    href: '/specialty-services/',
+    image: '/images/racer.jpg',
+    alt: 'Raw aluminum vintage race car inside the Pumphrey and Co. workshop',
+    text: 'Cast iron welding, tire shaving, vintage automotive air conditioning, wheel work, and odd shop problems that do not fit a standard menu.',
+  },
+];
 ---
+<BaseLayout>
+  <SiteHeader />
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+  <main>
+    <section class="hero" aria-label="Pumphrey and Co. homepage hero">
+      <img class="hero-image" src="/images/shop-wide.jpg" alt="Black and white view of the Pumphrey and Co. workshop in Campbell, California" />
+      <div class="hero-overlay"></div>
+      <div class="shell hero-content">
+        <p class="eyebrow hero-eyebrow">Campbell, California - Machine shop first</p>
+        <h1>When the part doesn't exist, we make it.</h1>
+        <p class="hero-lede">Engine machining, Babbitt bearing work, CNC fabrication, cast iron welding, and restoration for rare prewar, antique, vintage, and classic automobiles.</p>
+        <div class="hero-actions">
+          <a class="button button-accent" href="tel:4083718030">Call (408) 371-8030</a>
+          <a class="button button-ghost" href="#services">View Services</a>
+        </div>
+      </div>
+    </section>
+
+    <ProofBar items={proofItems} />
+
+    <section class="manifesto-section">
+      <div class="shell manifesto-grid">
+        <div>
+          <p class="eyebrow">Machine shop first</p>
+          <h2><span>Pumphrey &amp; Co.</span><span>is a machine shop first.</span></h2>
+        </div>
+        <div class="manifesto-copy">
+          <p>Pumphrey &amp; Co. starts with the part, not the paint. The shop works from castings, tolerances, bearings, weld repairs, and the mechanical problem that has stopped the car from being used.</p>
+          <p>For rare prewar, antique, vintage, and classic automobiles, restoration is often the visible result. The machine work is the reason it holds together.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section" id="services">
+      <div class="shell section-heading split-heading">
+        <div>
+          <p class="eyebrow">Service pathways</p>
+          <h2>Three ways into the shop.</h2>
+        </div>
+        <p>Choose the path closest to the problem. Each leads to deeper detail on the work Pumphrey &amp; Co. does in-house.</p>
+      </div>
+
+      <div class="shell service-stack">
+        {serviceFeatures.map((feature) => <ServiceFeature {...feature} />)}
+      </div>
+    </section>
+
+    <GalleryPreview />
+
+    <section class="final-cta" id="contact">
+      <div class="shell cta-grid">
+        <div>
+          <p class="eyebrow">Start with a phone call</p>
+          <h2>Have a car nobody else knows how to fix?</h2>
+          <p>Call Matt directly. He can tell you quickly whether your project is a good fit and what the right approach is.</p>
+          <div class="cta-actions">
+            <a class="button button-accent" href="tel:4083718030">Call (408) 371-8030</a>
+            <a class="button button-ghost" href="/contact/">Contact</a>
+          </div>
+        </div>
+        <address class="contact-card">
+          <span>Pumphrey &amp; Co.</span>
+          <strong>(408) 371-8030</strong>
+          371 E McGlincy Ln<br />Campbell, CA 95008
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <SiteFooter />
+</BaseLayout>
