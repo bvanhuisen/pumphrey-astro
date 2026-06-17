@@ -10,21 +10,51 @@
     <nav class="main-nav" aria-label="Primary navigation">
       <a href="/about/">About</a>
       <div class="nav-dropdown">
-        <a href="/engine-machine-work/" aria-haspopup="true">Services</a>
+        <button class="nav-dropdown-trigger" type="button" aria-haspopup="true">Services</button>
         <div class="dropdown-menu" aria-label="Service pages">
           <a href="/engine-machine-work/">Engine &amp; Machine Work</a>
           <a href="/restoration-fabrication/">Restoration &amp; Fabrication</a>
           <a href="/specialty-services/">Specialty Services</a>
         </div>
       </div>
-      <a href="/gallery/">Gallery</a>
       <a href="/careers/">Careers</a>
-      <a href="/contact/">Contact</a>
     </nav>
+
+    <details class="mobile-nav" data-mobile-nav>
+      <summary>Menu</summary>
+      <div class="mobile-nav-panel">
+        <a href="/about/">About</a>
+        <a href="/engine-machine-work/">Engine &amp; Machine Work</a>
+        <a href="/restoration-fabrication/">Restoration &amp; Fabrication</a>
+        <a href="/specialty-services/">Specialty Services</a>
+        <a href="/careers/">Careers</a>
+        <a href="tel:4083718030" aria-label="Call Matt at 408 371 8030">Call Matt</a>
+      </div>
+    </details>
 
     <div class="header-actions">
       <a class="phone-link" href="tel:4083718030">(408) 371-8030</a>
-      <a class="button button-outline" href="/contact/">Get in Touch</a>
+      <a class="button button-outline" href="tel:4083718030">Call Matt</a>
     </div>
   </div>
 </header>
+
+<script is:inline>
+  const mobileNav = document.querySelector('[data-mobile-nav]');
+
+  if (mobileNav) {
+    mobileNav.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        mobileNav.removeAttribute('open');
+      });
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') mobileNav.removeAttribute('open');
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!mobileNav.contains(event.target)) mobileNav.removeAttribute('open');
+    });
+  }
+</script>

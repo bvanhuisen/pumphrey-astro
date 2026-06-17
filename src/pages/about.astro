@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+
+const title = 'About Pumphrey & Co. | Machine-Shop-First Restoration | Campbell, CA';
+const description = 'Learn about Pumphrey & Co., a machine-shop-first rare car restoration and problem-solving shop in Campbell, California for serious collectors of antique, prewar, vintage, and classic automobiles.';
+---
+
+<BaseLayout title={title} description={description}>
+  <SiteHeader />
+
+  <main class="about-page">
+    <section class="about-hero" aria-label="About Pumphrey and Co.">
+      <div class="shell about-hero-grid">
+        <div class="about-hero-copy">
+          <p class="eyebrow hero-eyebrow">Campbell, California &middot; Machine-Shop First</p>
+          <h1>Built for the problems most shops cannot solve.</h1>
+          <p>Pumphrey &amp; Co. works on antique, prewar, vintage, and classic cars where replacement parts, routine repair, and modern assumptions stop being useful.</p>
+          <div class="about-hero-actions">
+            <a class="button button-accent" href="tel:4083718030">Call (408) 371-8030</a>
+            <a class="button button-ghost" href="#inside-the-shop">See the Work</a>
+          </div>
+        </div>
+        <figure class="about-hero-media">
+          <img src="/images/restoration/black-prewar-shop.jpg" alt="Prewar automobile and restoration work inside the Pumphrey and Co. shop" />
+        </figure>
+      </div>
+    </section>
+
+    <section class="about-opening">
+      <div class="shell about-opening-grid">
+        <div>
+          <p class="eyebrow">The point of view</p>
+          <h2>Not a restoration shop with a machine in the corner.</h2>
+        </div>
+        <div class="about-rich-copy">
+          <p>The machine work is the foundation. Castings fail. Bearings wear out. Threads disappear. Previous repairs hide bad decisions. Before a car can look finished, the problems underneath have to be understood and solved.</p>
+          <p>That is where Pumphrey &amp; Co. starts: with the original part, the failed system, the material, and the way the car was meant to work.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-method">
+      <div class="shell about-method-grid">
+        <div class="about-method-heading">
+          <p class="eyebrow">Working method</p>
+          <h2>How the shop thinks.</h2>
+        </div>
+        <div class="about-method-list" aria-label="Pumphrey and Co. working principles">
+          <div>
+            <span>01</span>
+            <h3>Understand the original part.</h3>
+            <p>Before replacing or remaking anything, the shop works out what the part was supposed to do, how it failed, and what the assembly needs in order to function correctly.</p>
+          </div>
+          <div>
+            <span>02</span>
+            <h3>Save what can be saved.</h3>
+            <p>Original material matters. If a casting, fitting, bearing surface, or assembly can be repaired correctly, that is usually the better answer.</p>
+          </div>
+          <div>
+            <span>03</span>
+            <h3>Make what cannot be bought.</h3>
+            <p>When no replacement exists, the work moves to measuring, machining, welding, brazing, and fitting until the part works again.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-profile">
+      <div class="shell about-profile-grid">
+        <figure class="about-profile-image">
+          <img src="/images/machine-work/machine-handwheel-detail.jpg" alt="Machine controls inside the Pumphrey and Co. shop" loading="lazy" />
+        </figure>
+        <div class="about-profile-copy">
+          <p class="eyebrow">Shop profile</p>
+          <h2>Judgment before shortcuts.</h2>
+          <p>Collectors bring Pumphrey &amp; Co. the kind of work that does not have a simple answer. The car may be rare. The part may be unavailable. The previous repair may have created a new problem. The first job is to understand what is actually wrong.</p>
+          <p>The shop works from the mechanical problem outward. Measure carefully. Preserve what makes sense. Repair or remake what no longer can be bought.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-video-section" id="inside-the-shop">
+      <div class="about-video-frame">
+        <video controls autoplay muted loop playsinline preload="metadata" poster="/images/shop/pumphrey-shop-bench.jpg">
+          <source src="/video/pumphrey-shop-short.webm" type="video/webm" />
+          <source src="/video/pumphrey-shop-short.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <section class="restoration-closing-section about-closing" id="contact">
+      <div class="shell restoration-closing-grid">
+        <div class="restoration-closing-info">
+          <p class="eyebrow">Start with the problem</p>
+          <h2>Bring us the hard problem.</h2>
+          <p>Call Matt directly. He can usually tell you quickly whether the project is a good fit and what the right approach should be.</p>
+        </div>
+
+        <div class="restoration-closing-cta">
+          <div class="restoration-contact-primary">
+            <a class="restoration-phone-action" href="tel:4083718030">(408) 371-8030</a>
+          </div>
+          <div class="restoration-contact-meta" aria-label="Shop contact details">
+            <div class="restoration-contact-detail">
+              <span>Address</span>
+              <p>371 E McGlincy Ln<br />Campbell, CA 95008</p>
+            </div>
+            <div class="restoration-contact-detail">
+              <span>Hours</span>
+              <!-- Hours need Matt confirmation before launch. -->
+              <p>Monday-Friday<br />9:00 AM-5:00 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
