@@ -1,0 +1,175 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+
+const title = 'Restoration & Fabrication | Pumphrey & Co. | Campbell, CA';
+const description = 'Automotive restoration, mechanical restoration, TIG welding, MIG welding, cast iron welding, and brazing for antique, vintage, prewar, and classic automobiles in Campbell, California.';
+---
+<BaseLayout title={title} description={description}>
+  <SiteHeader />
+
+  <main>
+    <section class="service-hero" aria-label="Restoration and fabrication">
+      <img class="service-hero-image" src="/images/shop-blue-car.jpg" alt="Blue prewar collector automobile inside the Pumphrey and Co. workshop" />
+      <div class="service-hero-overlay"></div>
+      <div class="shell service-hero-content">
+        <p class="eyebrow hero-eyebrow">Campbell, California &middot; Restoration &amp; Fabrication</p>
+        <h1>Restoration &amp; Fabrication</h1>
+        <p>Full restoration, mechanical restoration, welding, cast iron repair, and fabrication for rare prewar, antique, vintage, and classic automobiles.</p>
+        <div class="hero-actions">
+          <a class="button button-accent" href="tel:4083718030">Call (408) 371-8030</a>
+          <a class="button button-ghost" href="/contact/">Discuss a Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="inner-intro">
+      <div class="shell inner-intro-grid">
+        <div>
+          <p class="eyebrow">Restoration &amp; fabrication</p>
+          <h2>Restoration starts underneath the finish.</h2>
+        </div>
+        <div class="inner-copy">
+          <p>A beautiful car can still be wrong underneath. Paint, chrome, and upholstery only matter if the structure, mechanical systems, welds, castings, and details beneath them were handled correctly.</p>
+          <p>At Pumphrey &amp; Co., restoration is built from the mechanical work outward. We take apart what needs to come apart, repair what can be saved, fabricate what no longer exists, and put the car back together with the patience the work deserves.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="capability-text-section">
+      <div class="shell capability-text-stack">
+        <aside class="capability-index" aria-label="Restoration and fabrication capabilities">
+          <p class="capability-index-title">Capabilities</p>
+          <ol>
+            <li><a class="is-active" href="#automotive-restoration" data-capability-link="automotive-restoration"><span>01</span> Automotive Restoration</a></li>
+            <li><a href="#mechanical-restoration" data-capability-link="mechanical-restoration"><span>02</span> Mechanical Restoration</a></li>
+            <li><a href="#tig-mig-welding" data-capability-link="tig-mig-welding"><span>03</span> TIG &amp; MIG Welding</a></li>
+            <li><a href="#cast-iron-welding-brazing" data-capability-link="cast-iron-welding-brazing"><span>04</span> Cast Iron Welding &amp; Brazing</a></li>
+          </ol>
+        </aside>
+
+        <div class="capability-body">
+          <article class="capability-service" id="automotive-restoration" data-capability-section>
+            <span class="capability-ghost-number" aria-hidden="true">01</span>
+            <p class="eyebrow">Automotive Restoration</p>
+            <h2>Full restoration, taken down to the last component.</h2>
+            <p>A real restoration is not paint and chrome. It is pulling the car apart completely, finding every problem, and addressing each one before anything goes back together.</p>
+            <p>Worn castings, failed systems, parts that were wrong the last time someone touched it. We work through all of it. What comes out the other end is a car that is correct underneath, not just one that photographs well in the driveway.</p>
+            <ul class="capability-spec-list" aria-label="Automotive restoration capabilities">
+              <li>Complete Teardown</li>
+              <li>Period-Correct Work</li>
+              <li>Concours-Level Finish</li>
+            </ul>
+          </article>
+
+          <article class="capability-service" id="mechanical-restoration" data-capability-section>
+            <span class="capability-ghost-number" aria-hidden="true">02</span>
+            <p class="eyebrow">Mechanical Restoration</p>
+            <h2>The car has to run as well as it looks.</h2>
+            <p>Plenty of beautiful cars do not drive. The body is done, the chrome is perfect, and the mechanicals were never sorted. That is the part we care about most.</p>
+            <p>Engine, driveline, fuel and cooling, the systems that decide whether the car actually moves or just sits. We bring the mechanical side back to where the car can be driven and trusted, not trailered to shows and hoped over.</p>
+            <ul class="capability-spec-list" aria-label="Mechanical restoration capabilities">
+              <li>Engine &amp; Driveline</li>
+              <li>Systems Sorted</li>
+              <li>Built To Be Driven</li>
+            </ul>
+          </article>
+
+          <article class="capability-service" id="tig-mig-welding" data-capability-section>
+            <span class="capability-ghost-number" aria-hidden="true">03</span>
+            <p class="eyebrow">TIG &amp; MIG Welding</p>
+            <h2>The right weld for the metal in front of us.</h2>
+            <p>Welding on an old car is not one skill. It is knowing which process the job calls for. TIG when the work needs precision and control, MIG when it is the right tool for the repair.</p>
+            <p>Thin vintage sheet metal, structural pieces, brackets that someone has to make from nothing. We read the material, the thickness, and the stress it will see, then weld it so it holds and so it disappears.</p>
+            <ul class="capability-spec-list" aria-label="TIG and MIG welding capabilities">
+              <li>TIG Precision</li>
+              <li>MIG Fabrication</li>
+              <li>Structural &amp; Sheet</li>
+            </ul>
+          </article>
+
+          <article class="capability-service" id="cast-iron-welding-brazing" data-capability-section>
+            <span class="capability-ghost-number" aria-hidden="true">04</span>
+            <p class="eyebrow">Cast Iron Welding &amp; Brazing</p>
+            <h2>Cracked a vintage block? Most shops are done. We are not.</h2>
+            <p>Cast iron is where a lot of restorations end, because welding it wrong destroys the part for good. A cracked block, a broken manifold, a damaged housing that has not been manufactured since before the war.</p>
+            <p>Throwing it away usually is not an option, because there is nothing to replace it with. So we weld it. Cast iron welding and brazing done with the heat control and patience the material demands, to save the part that cannot be bought.</p>
+            <ul class="capability-spec-list" aria-label="Cast iron welding and brazing capabilities">
+              <li>Cracked Blocks</li>
+              <li>Brazing</li>
+              <li>Saving The Unobtainable</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="restoration-closing-section" id="contact">
+      <div class="shell restoration-closing-grid">
+        <div class="restoration-closing-info">
+          <p class="eyebrow">Who We Serve</p>
+          <h2>For cars that need more than cosmetic restoration.</h2>
+          <p>Pumphrey &amp; Co. works with serious collectors, caretakers, and owners of antique, vintage, prewar, brass-era, and classic automobiles throughout Campbell, Santa Clara County, the Bay Area, Palo Alto, Los Gatos, Saratoga, and Atherton.</p>
+          <p>Some cars need more than a cosmetic refresh. They need structure repaired, systems rebuilt, metalwork corrected, and hard decisions made by someone who understands what the car is and what the work requires.</p>
+          <ul class="collector-list" aria-label="Restoration and fabrication project types">
+            <li>Full Restorations</li>
+            <li>Mechanical Restorations</li>
+            <li>Vintage Welding</li>
+            <li>Cast Iron Repair</li>
+          </ul>
+        </div>
+
+        <div class="restoration-closing-cta">
+          <a class="restoration-logo-badge" href="/" aria-label="Pumphrey & Co. home">
+            <img src="/images/pumphrey-logo.png" alt="Pumphrey & Co. Restoration & Services" loading="lazy" />
+          </a>
+          <div class="restoration-contact-stack">
+            <a class="restoration-phone-action" href="tel:4083718030">(408) 371-8030</a>
+            <div class="restoration-contact-detail">
+              <span>Address</span>
+              <p>371 E McGlincy Ln<br />Campbell, CA 95008</p>
+            </div>
+            <div class="restoration-contact-detail">
+              <span>Hours</span>
+              <!-- Hours need Matt confirmation before launch. -->
+              <p>Monday&ndash;Friday<br />9:00 AM&ndash;5:00 PM</p>
+            </div>
+          </div>
+          <div class="cta-actions restoration-message-action">
+            <a class="button button-ghost" href="/contact/">Send a Message</a>
+          </div>
+        </div>
+
+        <div class="restoration-closing-bottom">
+          <p>&copy; Pumphrey &amp; Co. &middot; Campbell, California</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script is:inline>
+    const capabilityLinks = Array.from(document.querySelectorAll('[data-capability-link]'));
+    const capabilitySections = Array.from(document.querySelectorAll('[data-capability-section]'));
+
+    if (capabilityLinks.length && capabilitySections.length && 'IntersectionObserver' in window) {
+      const setActiveCapability = (id) => {
+        capabilityLinks.forEach((link) => {
+          link.classList.toggle('is-active', link.dataset.capabilityLink === id);
+        });
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+        if (visible) setActiveCapability(visible.target.id);
+      }, {
+        rootMargin: '-28% 0px -52% 0px',
+        threshold: [0.12, 0.3, 0.55],
+      });
+
+      capabilitySections.forEach((section) => observer.observe(section));
+    }
+  </script>
+</BaseLayout>

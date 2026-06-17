@@ -1,0 +1,175 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+
+const title = 'Specialty Services | Tire & Wheel Work, Tire Shaving & Vintage AC | Pumphrey & Co.';
+const description = 'Specialty services for antique, prewar, vintage, and classic automobiles in Campbell, CA. Tire and wheel service, wheel restoration, tire shaving, and automotive air conditioning.';
+---
+<BaseLayout title={title} description={description}>
+  <SiteHeader />
+
+  <main>
+    <section class="service-hero" aria-label="Specialty services">
+      <img class="service-hero-image" src="/images/racer.jpg" alt="Raw aluminum vintage race car inside the Pumphrey and Co. workshop" />
+      <div class="service-hero-overlay"></div>
+      <div class="shell service-hero-content">
+        <p class="eyebrow hero-eyebrow">Campbell, California &middot; Specialty Services</p>
+        <h1>Specialty Services</h1>
+        <p>Tire and wheel service, wheel restoration, tire shaving, and automotive air conditioning for antique, prewar, vintage, and classic automobiles.</p>
+        <div class="hero-actions">
+          <a class="button button-accent" href="tel:4083718030">Call (408) 371-8030</a>
+          <a class="button button-ghost" href="/contact/">Discuss a Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="inner-intro">
+      <div class="shell inner-intro-grid">
+        <div>
+          <p class="eyebrow">Specialty services</p>
+          <h2>The odd jobs are usually where the expertise shows.</h2>
+        </div>
+        <div class="inner-copy">
+          <p>Some work does not fit neatly into a standard restoration category. Tire fitment, old wheel construction, obsolete rim sizes, discreet air conditioning, and the small mechanical problems that stop a car from being driven all require the same thing: patience, judgment, and the right touch.</p>
+          <p>At Pumphrey &amp; Co., specialty work is handled with the same standard as the larger builds. If the part, wheel, tire, or system cannot be treated like a modern replacement item, we slow down and solve it correctly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="capability-text-section">
+      <div class="shell capability-text-stack">
+        <aside class="capability-index" aria-label="Specialty services capabilities">
+          <p class="capability-index-title">Capabilities</p>
+          <ol>
+            <li><a class="is-active" href="#tire-wheel-service" data-capability-link="tire-wheel-service"><span>01</span> Tire &amp; Wheel Service</a></li>
+            <li><a href="#wheel-restoration" data-capability-link="wheel-restoration"><span>02</span> Wheel Restoration</a></li>
+            <li><a href="#tire-shaving" data-capability-link="tire-shaving"><span>03</span> Tire Shaving</a></li>
+            <li><a href="#automotive-air-conditioning" data-capability-link="automotive-air-conditioning"><span>04</span> Automotive Air Conditioning</a></li>
+          </ol>
+        </aside>
+
+        <div class="capability-body">
+          <article class="capability-service" id="tire-wheel-service" data-capability-section>
+            <span class="capability-ghost-number" aria-hidden="true">01</span>
+            <p class="eyebrow">Tire &amp; Wheel Service</p>
+            <h2>Antique wheels do not go on a modern tire machine.</h2>
+            <p>Wire wheels, wood-spoke wheels, obsolete rim sizes. The wheels on early cars were built differently, and servicing them takes someone who knows how they go together and what damages them.</p>
+            <p>We mount, balance, and service tires and wheels on antique and classic cars by hand when the equipment calls for it, because the wrong machine and the wrong touch can ruin a wheel that is nearly impossible to replace.</p>
+            <ul class="capability-spec-list" aria-label="Tire and wheel service capabilities">
+              <li>Wire &amp; Wood Wheels</li>
+              <li>Hand Mounting</li>
+              <li>Obsolete Rim Sizes</li>
+            </ul>
+          </article>
+
+          <article class="capability-service" id="wheel-restoration" data-capability-section>
+            <span class="capability-ghost-number" aria-hidden="true">02</span>
+            <p class="eyebrow">Wheel Restoration</p>
+            <h2>A wheel that is out of true is not just ugly. It is unsafe.</h2>
+            <p>Old wheels carry a hundred years of use, and a lot of them are bent, rusted, loose at the spokes, or out of round. On a heavy prewar car, that is not a cosmetic problem. It is a driving one.</p>
+            <p>We restore wheels back to true and sound, with the spoke tensioning, repair, and finishing the wheel needs to be safe on the road again, not just to sit and look correct.</p>
+            <ul class="capability-spec-list" aria-label="Wheel restoration capabilities">
+              <li>Trueing &amp; Tensioning</li>
+              <li>Spoke Repair</li>
+              <li>Safe To Drive</li>
+            </ul>
+          </article>
+
+          <article class="capability-service" id="tire-shaving" data-capability-section>
+            <span class="capability-ghost-number" aria-hidden="true">03</span>
+            <p class="eyebrow">Tire Shaving</p>
+            <h2>Sometimes the right tire does not exist in the right size.</h2>
+            <p>Vintage fitment is its own problem. The correct tire for a car might not be made anymore, or the only available tire runs slightly too tall or too wide for the fender, the clearance, or the look the car is supposed to have.</p>
+            <p>Tire shaving lets us bring a tire down to the exact dimension the car needs. It is a specific skill for a specific problem, and it is the kind of thing that separates a car that fits from one that is almost right.</p>
+            <ul class="capability-spec-list" aria-label="Tire shaving capabilities">
+              <li>Vintage Fitment</li>
+              <li>Exact Dimensions</li>
+              <li>Clearance &amp; Stance</li>
+            </ul>
+          </article>
+
+          <article class="capability-service" id="automotive-air-conditioning" data-capability-section>
+            <span class="capability-ghost-number" aria-hidden="true">04</span>
+            <p class="eyebrow">Automotive Air Conditioning</p>
+            <h2>Air conditioning a classic without butchering it.</h2>
+            <p>Adding or servicing AC on a vintage car is a balancing act. The owner wants to actually drive and enjoy the car, but the work cannot hack up the dash, the engine bay, or the character of the car to get there.</p>
+            <p>We handle automotive air conditioning with that in mind, fitting and servicing systems so the car stays comfortable and stays correct, instead of looking like something was forced in where it never belonged.</p>
+            <ul class="capability-spec-list" aria-label="Automotive air conditioning capabilities">
+              <li>Service &amp; Installation</li>
+              <li>Discreet Fitment</li>
+              <li>Drive-It Comfort</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="restoration-closing-section" id="contact">
+      <div class="shell restoration-closing-grid">
+        <div class="restoration-closing-info">
+          <p class="eyebrow">Who We Serve</p>
+          <h2>For the details that decide whether the car actually works.</h2>
+          <p>Pumphrey &amp; Co. works with serious collectors, caretakers, and owners of antique, vintage, prewar, brass-era, and classic automobiles throughout Campbell, Santa Clara County, the Bay Area, Palo Alto, Los Gatos, Saratoga, and Atherton.</p>
+          <p>Some of the most important work on an old car is not the glamorous work. It is the fitment, the wheels, the tires, the comfort systems, and the odd problems that make the difference between a car that looks finished and a car that can actually be used.</p>
+          <ul class="collector-list" aria-label="Specialty service project types">
+            <li>Tire &amp; Wheel Service</li>
+            <li>Wheel Restoration</li>
+            <li>Tire Shaving</li>
+            <li>Vintage AC</li>
+          </ul>
+        </div>
+
+        <div class="restoration-closing-cta">
+          <a class="restoration-logo-badge" href="/" aria-label="Pumphrey & Co. home">
+            <img src="/images/pumphrey-logo.png" alt="Pumphrey & Co. Restoration & Services" loading="lazy" />
+          </a>
+          <div class="restoration-contact-stack">
+            <a class="restoration-phone-action" href="tel:4083718030">(408) 371-8030</a>
+            <div class="restoration-contact-detail">
+              <span>Address</span>
+              <p>371 E McGlincy Ln<br />Campbell, CA 95008</p>
+            </div>
+            <div class="restoration-contact-detail">
+              <span>Hours</span>
+              <!-- Hours need Matt confirmation before launch. -->
+              <p>Monday&ndash;Friday<br />9:00 AM&ndash;5:00 PM</p>
+            </div>
+          </div>
+          <div class="cta-actions restoration-message-action">
+            <a class="button button-ghost" href="/contact/">Send a Message</a>
+          </div>
+        </div>
+
+        <div class="restoration-closing-bottom">
+          <p>&copy; Pumphrey &amp; Co. &middot; Campbell, California</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script is:inline>
+    const capabilityLinks = Array.from(document.querySelectorAll('[data-capability-link]'));
+    const capabilitySections = Array.from(document.querySelectorAll('[data-capability-section]'));
+
+    if (capabilityLinks.length && capabilitySections.length && 'IntersectionObserver' in window) {
+      const setActiveCapability = (id) => {
+        capabilityLinks.forEach((link) => {
+          link.classList.toggle('is-active', link.dataset.capabilityLink === id);
+        });
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+        if (visible) setActiveCapability(visible.target.id);
+      }, {
+        rootMargin: '-28% 0px -52% 0px',
+        threshold: [0.12, 0.3, 0.55],
+      });
+
+      capabilitySections.forEach((section) => observer.observe(section));
+    }
+  </script>
+</BaseLayout>

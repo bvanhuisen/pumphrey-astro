@@ -1,0 +1,179 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+
+const title = 'Engine & Machine Work | Pumphrey & Co. | Campbell, CA';
+const description = 'Engine machining, Babbitt bearing work, CNC machining, and mechanical work for antique, prewar, vintage, and classic automobiles. Pumphrey & Co. in Campbell, California.';
+---
+<BaseLayout title={title} description={description}>
+  <SiteHeader />
+
+  <main>
+    <section class="service-hero service-hero-machine" aria-label="Engine and machine work">
+      <img class="service-hero-image" src="/images/machine-detail.jpg" alt="Machine tool detail inside the Pumphrey and Co. shop" />
+      <div class="service-hero-overlay"></div>
+      <div class="shell service-hero-content">
+        <p class="eyebrow hero-eyebrow">Campbell, California - Engine machine shop</p>
+        <h1>Engine &amp; Machine Work</h1>
+        <p>Pumphrey &amp; Co. is a machine shop first. Restoration starts with the ability to solve mechanical problems, machine missing parts, repair what can be saved, and build what can no longer be bought.</p>
+        <div class="hero-actions">
+          <a class="button button-accent" href="tel:4083718030">Call (408) 371-8030</a>
+          <a class="button button-ghost" href="/contact/">Discuss a Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="inner-intro">
+      <div class="shell inner-intro-grid">
+        <div>
+          <p class="eyebrow">Machine shop first</p>
+          <h2>The work begins where the original part failed.</h2>
+        </div>
+        <div class="inner-copy">
+          <p>Many antique, vintage, and classic cars reach a point where ordinary parts replacement is no longer an option. The casting is worn. The bearing has failed. The shaft is no longer true. The part number means little because nobody has made the part for decades.</p>
+          <p>That is the kind of work Pumphrey &amp; Co. is built around. From its shop in Campbell, California, Pumphrey &amp; Co. works on prewar automobiles, brass-era automobiles, and later collector cars where the right answer takes measuring, machining, repair, and judgment.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="capability-text-section">
+      <div class="shell capability-text-stack">
+        <aside class="capability-index" aria-label="Engine and machine work capabilities">
+          <p class="capability-index-title">Capabilities</p>
+          <ol>
+            <li><a class="is-active" href="#engine-machining" data-capability-link="engine-machining"><span>01</span> Engine Machining</a></li>
+            <li><a href="#babbitt-bearing-work" data-capability-link="babbitt-bearing-work"><span>02</span> Babbitt Bearing Work</a></li>
+            <li><a href="#cnc-machine-work" data-capability-link="cnc-machine-work"><span>03</span> CNC Machine Work</a></li>
+            <li><a href="#automotive-mechanics" data-capability-link="automotive-mechanics"><span>04</span> Automotive Mechanics</a></li>
+          </ol>
+        </aside>
+
+        <div class="capability-body">
+          <article class="capability-service" id="engine-machining" data-capability-section>
+            <span class="capability-ghost-number" aria-hidden="true">01</span>
+            <p class="eyebrow">Engine Machining</p>
+            <h2>Machining for engines that cannot be treated like catalog rebuilds.</h2>
+            <p>Older engines often arrive with a mixture of age, wear, previous repairs, and missing information. Pumphrey &amp; Co. approaches engine machine work by first understanding what the engine needs mechanically, then deciding what can be machined, repaired, reused, or replaced.</p>
+            <p>The work may involve measuring, surfacing, boring, fitting, machining related components, or working through damage in castings and assemblies that require more thought than a modern production rebuild. The goal is not to force a standard recipe onto a rare engine. The goal is to get the mechanical foundation right.</p>
+            <ul class="capability-spec-list" aria-label="Engine machining capabilities">
+              <li>Boring &amp; Honing</li>
+              <li>Valve Work</li>
+              <li>Line Boring</li>
+            </ul>
+          </article>
+
+          <article class="capability-service" id="babbitt-bearing-work" data-capability-section>
+            <span class="capability-ghost-number" aria-hidden="true">02</span>
+            <p class="eyebrow">Babbitt Bearing Work</p>
+            <h2>Babbitt bearing capability for cars that still depend on it.</h2>
+            <p>Babbitt bearings are part of the mechanical language of many early automobiles. They are not a novelty item or a generic line on a services list. Done properly, Babbitt work requires preparation, fit, alignment, machining, and a clear understanding of how the engine will actually run.</p>
+            <p>For serious collectors with brass-era automobiles, prewar automobiles, and other early engines, this capability matters because the bearing work is often central to whether the car can be trusted. Pumphrey &amp; Co. can evaluate worn bearing surfaces and help determine the right repair path rather than treating the job as a simple replacement.</p>
+            <ul class="capability-spec-list" aria-label="Babbitt bearing capabilities">
+              <li>Pouring</li>
+              <li>Machining</li>
+              <li>Prewar Applications</li>
+            </ul>
+          </article>
+
+          <article class="capability-service" id="cnc-machine-work" data-capability-section>
+            <span class="capability-ghost-number" aria-hidden="true">03</span>
+            <p class="eyebrow">CNC Machine Work</p>
+            <h2>Modern equipment applied carefully to old mechanical problems.</h2>
+            <p>CNC machining is useful when a missing, damaged, or no-longer-manufactured component needs to be reproduced or adapted with precision. That does not mean every part should be made from scratch, and it does not mean every project needs CNC work.</p>
+            <p>It means Pumphrey &amp; Co. has another tool available when the project calls for it. The shop can work from the physical problem in front of it, evaluate the original component, and use machining, fabrication, or repair to arrive at a practical solution.</p>
+            <ul class="capability-spec-list" aria-label="CNC machine work capabilities">
+              <li>Custom Components</li>
+              <li>Reproduction Fittings</li>
+              <li>Machined Adapters</li>
+            </ul>
+          </article>
+
+          <article class="capability-service" id="automotive-mechanics" data-capability-section>
+            <span class="capability-ghost-number" aria-hidden="true">04</span>
+            <p class="eyebrow">Automotive Mechanics</p>
+            <h2>Mechanical work for old systems that demand patience.</h2>
+            <p>Rare cars are not only engines and machined parts. They are fuel systems, driveline pieces, cooling issues, linkages, hardware, fittings, and old assemblies that have to work together. Pumphrey &amp; Co. handles automotive mechanics with the same practical shop mindset: diagnose the problem, preserve what makes sense, and repair what can be made right.</p>
+            <p>This is especially important on cars where replacement parts are scarce, previous work has introduced new problems, or modern assumptions do not fit the machine. The goal is a car that works correctly, not a pile of attractive parts that still cannot be driven with confidence.</p>
+            <ul class="capability-spec-list" aria-label="Automotive mechanics capabilities">
+              <li>Drivetrain</li>
+              <li>Braking Systems</li>
+              <li>Mechanical Restoration</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="collector-section">
+      <div class="shell collector-grid">
+        <div>
+          <p class="eyebrow">Who we serve</p>
+          <h2>For collectors who know why the mechanical work matters.</h2>
+        </div>
+        <div class="collector-copy">
+          <p>Pumphrey &amp; Co. serves serious collectors, caretakers, and owners of antique, vintage, and classic cars from Campbell and Santa Clara County to the wider Bay Area, including Palo Alto, Los Gatos, Saratoga, and Atherton.</p>
+          <p>The common thread is not one make or decade. It is the kind of car where the right shop needs to understand old mechanical systems, unavailable parts, worn castings, damaged bearings, and the practical limits of what can and should be repaired.</p>
+          <ul class="collector-list" aria-label="Vehicle types served">
+            <li>Prewar automobiles</li>
+            <li>Brass-era automobiles</li>
+            <li>Antique, vintage, and classic cars</li>
+            <li>Rare collector cars with unavailable or damaged parts</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-pullquote">
+      <div class="shell service-pullquote-inner">
+        <blockquote>
+          Matt is honest as the day is long, with incredible attention to detail and an immense breadth of knowledge of high-end vehicles.
+          <cite>Collector testimonial - source to confirm</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="final-cta" id="contact">
+      <div class="shell cta-grid">
+        <div>
+          <p class="eyebrow">Start with the mechanical problem</p>
+          <h2>Need machine work for a rare engine or old system?</h2>
+          <p>Call Matt directly. He can usually tell you quickly whether the project is a good fit and what the next step should be.</p>
+          <div class="cta-actions">
+            <a class="button button-accent" href="tel:4083718030">Call (408) 371-8030</a>
+            <a class="button button-ghost" href="/contact/">Contact</a>
+          </div>
+        </div>
+        <address class="contact-card">
+          <span>Pumphrey &amp; Co.</span>
+          <strong>(408) 371-8030</strong>
+          371 E McGlincy Ln<br />Campbell, CA 95008
+        </address>
+      </div>
+    </section>
+  </main>
+  <script is:inline>
+    const capabilityLinks = Array.from(document.querySelectorAll('[data-capability-link]'));
+    const capabilitySections = Array.from(document.querySelectorAll('[data-capability-section]'));
+
+    if (capabilityLinks.length && capabilitySections.length && 'IntersectionObserver' in window) {
+      const setActiveCapability = (id) => {
+        capabilityLinks.forEach((link) => {
+          link.classList.toggle('is-active', link.dataset.capabilityLink === id);
+        });
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+        if (visible) setActiveCapability(visible.target.id);
+      }, {
+        rootMargin: '-28% 0px -52% 0px',
+        threshold: [0.12, 0.3, 0.55],
+      });
+
+      capabilitySections.forEach((section) => observer.observe(section));
+    }
+  </script>
+</BaseLayout>

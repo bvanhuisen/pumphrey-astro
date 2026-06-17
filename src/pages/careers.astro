@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+
+const title = 'Careers | Pumphrey & Co. | Campbell, CA';
+const description = 'Pumphrey & Co. in Campbell, California is hiring for rare antique, prewar, vintage, and classic automobile machining, fabrication, welding, and mechanical restoration work.';
+---
+
+<BaseLayout title={title} description={description}>
+  <SiteHeader />
+
+  <main class="careers-page">
+    <section class="careers-hero" aria-label="Careers at Pumphrey and Co.">
+      <img class="careers-hero-image" src="/images/shop-wide.jpg" alt="Pumphrey and Co. workshop floor with rare cars and shop equipment" />
+      <div class="careers-hero-overlay"></div>
+      <div class="shell careers-hero-content">
+        <p class="eyebrow hero-eyebrow">Campbell, California &middot; Careers</p>
+        <h1>Rare work that takes real skill.</h1>
+        <p>Machining, Babbitt bearings, fabrication, welding, and mechanical restoration on prewar and classic cars most shops never touch. We care what you can actually do, not what a resume claims. A foundation in the trade and the drive to master the rest.</p>
+        <ul class="careers-tags" aria-label="Career focus areas">
+          <li>Skilled trade background</li>
+          <li>Machining &amp; fabrication</li>
+          <li>Vintage &amp; prewar cars</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="careers-trade-section">
+      <div class="shell careers-trade-grid">
+        <figure class="careers-trade-photo">
+          <img src="/images/shop-bench.jpg" alt="Tools, parts, and workbench inside Pumphrey and Co." loading="lazy" />
+        </figure>
+        <div class="careers-section-copy">
+          <p class="eyebrow">The shop</p>
+          <h2>A trade, in a shop that respects it.</h2>
+          <p>A clean, well-equipped shop and the best work of your career, on cars you won't see anywhere else. Pay reflects what you bring, and the right person learns the full range here.</p>
+          <!-- Pay specifics should be confirmed with Matt before launch. -->
+          <ul class="careers-tags" aria-label="Shop benefits">
+            <li>Competitive pay</li>
+            <li>Equipped shop</li>
+            <li>Learn from a master</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="careers-letter-section" id="contact">
+      <div class="shell careers-letter-grid">
+        <div class="careers-section-copy careers-letter-lead">
+          <p class="eyebrow">How to reach out</p>
+          <h2>Don't send a form letter.</h2>
+          <p>No application form, on purpose. If you think you're a fit, write to us. Tell us your experience and why this shop. Send a resume or a record of your work, and we'll read every note from someone who took the time.</p>
+          <ul class="careers-tags" aria-label="Application requirements">
+            <li>Write directly</li>
+            <li>Share your experience</li>
+            <li>Real applicants only</li>
+          </ul>
+        </div>
+
+        <aside class="careers-apply-panel" aria-label="Apply directly">
+          <p class="eyebrow">Apply directly</p>
+          <a class="button button-accent" href="mailto:[CONFIRM EMAIL WITH MATT]">Email Matt</a>
+          <p class="careers-email-placeholder">[CONFIRM EMAIL WITH MATT]</p>
+        </aside>
+
+        <div class="careers-bottom-row">
+          <a class="careers-logo-badge" href="/" aria-label="Pumphrey & Co. home">
+            <img src="/images/pumphrey-logo.png" alt="Pumphrey & Co. Restoration & Services" loading="lazy" />
+          </a>
+          <p>&copy; Pumphrey &amp; Co. &middot; Campbell, California</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
