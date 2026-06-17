@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+
+const title = 'Gallery | Pumphrey & Co. | Campbell, CA';
+const description = 'A working look at rare cars, machine work, metal repair, and restoration inside Pumphrey & Co. in Campbell, California.';
+---
+
+<BaseLayout title={title} description={description}>
+  <SiteHeader />
+
+  <main class="gallery-page">
+    <section class="gallery-hero" aria-label="Pumphrey and Co. portfolio">
+      <img class="gallery-hero-image" src="/images/gallery/black-prewar-front.jpg" alt="Black prewar automobile inside the Pumphrey and Co. shop" />
+      <div class="gallery-hero-overlay"></div>
+      <div class="shell gallery-hero-content">
+        <p class="eyebrow hero-eyebrow">Portfolio</p>
+        <h1>Proof from the floor.</h1>
+        <p>Rare cars, machine work, metal repair, and the shop behind the finished result.</p>
+        <div class="hero-actions">
+          <a class="button button-accent" href="#gallery-work">View the Work</a>
+          <a class="button button-ghost" href="tel:4083718030">Call Matt</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-intro" id="gallery-work">
+      <div class="shell gallery-intro-grid">
+        <div>
+          <p class="eyebrow">Working archive</p>
+          <h2>Not a complete archive. A look at what moves through the shop.</h2>
+        </div>
+        <p>This is a working look at the kind of cars, parts, and problems that move through Pumphrey &amp; Co.</p>
+      </div>
+    </section>
+
+    <section class="gallery-editorial" aria-label="Selected Pumphrey and Co. work">
+      <div class="shell gallery-sequence">
+        <figure class="gallery-feature-image">
+          <img src="/images/hero/pumphrey-shop-blue-car.jpg" alt="Rare prewar automobiles and shop equipment inside Pumphrey and Co." loading="lazy" />
+          <figcaption>Rare-car problem solving</figcaption>
+        </figure>
+
+        <div class="gallery-split">
+          <div>
+            <p class="eyebrow">Finished work starts underneath</p>
+            <h2>The visible result depends on the work nobody sees.</h2>
+            <p>Machine work, metal repair, careful fitting, and mechanical judgment all happen before the car looks finished.</p>
+          </div>
+          <figure>
+            <img src="/images/shop/pumphrey-shop-bench.jpg" alt="Engine parts and tooling on a yellow shop table" loading="lazy" />
+            <figcaption>Shop process</figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-detail-row" aria-label="Machine and collector car details">
+          <figure>
+            <img src="/images/machine-work/machine-handwheel-detail.jpg" alt="Close detail of machine controls inside the shop" loading="lazy" />
+            <figcaption>Machine work</figcaption>
+          </figure>
+          <figure>
+            <img src="/images/gallery/classic-convertible-detail.jpg" alt="Classic convertible detail inside the shop" loading="lazy" />
+            <figcaption>Prewar restoration</figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-proof-band" aria-label="Shop proof images">
+          <figure>
+            <img src="/images/wheels/vintage-racer-wheel.jpg" alt="Raw aluminum vintage racer inside the shop" loading="lazy" />
+            <figcaption>Specialty work</figcaption>
+          </figure>
+          <figure>
+            <img src="/images/gallery/black-packard-profile.jpg" alt="Black Packard profile" loading="lazy" />
+            <figcaption>Finished work</figcaption>
+          </figure>
+          <figure>
+            <img src="/images/gallery/black-prewar-plate.jpg" alt="Prewar automobiles grouped inside the shop" loading="lazy" />
+            <figcaption>Prewar restoration</figcaption>
+          </figure>
+        </div>
+
+        <div class="gallery-final-feature">
+          <figure>
+            <img src="/images/shop/pumphrey-shop-wide.jpg" alt="Wide view of the Pumphrey and Co. shop with cars and equipment" loading="lazy" />
+            <figcaption>Shop process</figcaption>
+          </figure>
+          <p>The current images show the direction. Final photography will let this page document the level of detail the work deserves.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="restoration-closing-section gallery-closing" id="contact">
+      <div class="shell restoration-closing-grid">
+        <div class="restoration-closing-info">
+          <p class="eyebrow">Have a serious project?</p>
+          <h2>Start with the problem.</h2>
+          <p>Call Matt directly. If the car, part, or repair is a fit for the shop, he can usually tell you the right next step.</p>
+        </div>
+
+        <div class="restoration-closing-cta">
+          <div class="restoration-contact-primary">
+            <p class="restoration-contact-label">Start with the shop</p>
+            <a class="restoration-phone-action" href="tel:4083718030">(408) 371-8030</a>
+          </div>
+          <div class="restoration-contact-meta" aria-label="Shop contact details">
+            <div class="restoration-contact-detail">
+              <span>Address</span>
+              <p>371 E McGlincy Ln<br />Campbell, CA 95008</p>
+            </div>
+            <div class="restoration-contact-detail">
+              <span>Hours</span>
+              <!-- Hours need Matt confirmation before launch. -->
+              <p>Monday-Friday<br />9:00 AM-5:00 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
