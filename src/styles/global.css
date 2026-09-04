@@ -1984,6 +1984,40 @@ blockquote cite {
   .quote-mark { font-size: 6rem; }
 }
 
+.cookie-consent {
+  position: fixed;
+  z-index: 2000;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid var(--line-strong);
+  background: rgba(8, 10, 10, 0.97);
+  backdrop-filter: blur(10px);
+}
+.cookie-consent-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem 0;
+}
+.cookie-consent-inner p {
+  max-width: 640px;
+  color: var(--soft);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+.cookie-consent-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+.cookie-consent-actions .button {
+  min-height: 40px;
+  padding: 0.65rem 1.1rem;
+}
+
 @media (max-width: 560px) {
   .header-row { grid-template-columns: 1fr auto; }
   .header-actions { display: none; }

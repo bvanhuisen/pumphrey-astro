@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import CookieConsent from '../components/CookieConsent.astro';
 
 const {
   title = 'Pumphrey & Co. | Engine Machine Shop & Classic Car Restoration | Campbell, CA',
@@ -19,5 +20,6 @@ const {
   </head>
   <body>
     <slot />
+    <CookieConsent />
   </body>
 </html>
