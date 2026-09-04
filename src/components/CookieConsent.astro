@@ -1,0 +1,32 @@
+---
+---
+<div id="cookie-consent" class="cookie-consent" hidden>
+  <div class="cookie-consent-inner shell">
+    <p>
+      We use cookies to run this site and understand how it's used. By clicking "Accept," you agree to our use of cookies. See our <a href="/privacy-policy">Privacy Policy</a> for details.
+    </p>
+    <div class="cookie-consent-actions">
+      <button type="button" id="cookie-decline" class="button button-outline">Decline</button>
+      <button type="button" id="cookie-accept" class="button button-accent">Accept</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const KEY = 'cookie-consent';
+  const banner = document.getElementById('cookie-consent');
+
+  if (banner && !localStorage.getItem(KEY)) {
+    banner.hidden = false;
+  }
+
+  document.getElementById('cookie-accept')?.addEventListener('click', () => {
+    localStorage.setItem(KEY, 'accepted');
+    if (banner) banner.hidden = true;
+  });
+
+  document.getElementById('cookie-decline')?.addEventListener('click', () => {
+    localStorage.setItem(KEY, 'declined');
+    if (banner) banner.hidden = true;
+  });
+</script>
