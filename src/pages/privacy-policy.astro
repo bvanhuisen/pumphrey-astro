@@ -1,0 +1,76 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+
+const title = 'Privacy Policy | Pumphrey & Co. | Campbell, CA';
+const description = 'Privacy policy for Pumphrey & Co., a machine shop and antique auto restoration facility in Campbell, CA.';
+const lastUpdated = 'September 4, 2026';
+---
+
+<BaseLayout title={title} description={description}>
+  <SiteHeader />
+
+  <main class="legal-page">
+    <section class="legal-section">
+      <div class="shell legal-content">
+        <p class="eyebrow">Legal</p>
+        <h1>Privacy Policy</h1>
+        <p class="legal-updated">Last updated: {lastUpdated}</p>
+
+        <p>Pumphrey & Co. ("we," "us," or "our") operates this website. This policy describes, in plain terms, what information we collect from visitors and how we use it.</p>
+
+        <h2>Information we collect</h2>
+        <p>This site does not require you to create an account or log in. We may collect basic information you choose to give us directly, such as your name, phone number, or email address, when you call, email, or use a contact form. Like most websites, we may also use cookies and similar technologies to remember your preferences and understand how visitors use the site (for example, basic, aggregated traffic statistics).</p>
+
+        <h2>How we use it</h2>
+        <p>We use the information you provide to respond to your questions, quote work, and communicate with you about your vehicle or project. We use cookies and site-usage data only to operate the site and understand how it's used. We do not sell your personal information.</p>
+
+        <h2>Cookies</h2>
+        <p>Cookies are small files stored in your browser. You can accept or decline non-essential cookies using the banner shown when you first visit this site, and you can also disable cookies at any time through your browser settings. Declining cookies will not prevent you from using the site.</p>
+
+        <h2>Sharing</h2>
+        <p>We do not sell or rent your personal information to third parties. We may share information with service providers who help us operate this website or run our business, and only as needed for those purposes.</p>
+
+        <h2>Your rights</h2>
+        <p>If you are a California resident, you have the right to request details about the personal information we hold about you and to request that it be deleted. To make a request, or if you have any questions about this policy, contact us using the information below.</p>
+
+        <h2>Contact us</h2>
+        <p>Pumphrey & Co.<br />371 E McGlincy Ln, Campbell, CA 95008<br /><a href="tel:4083718030">(408) 371-8030</a><br /><a href="mailto:matt@pumphreyandco.com">matt@pumphreyandco.com</a></p>
+
+        <h2>Changes to this policy</h2>
+        <p>We may update this policy from time to time. Changes will be posted on this page with a new "last updated" date.</p>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .legal-page { background: #0c1010; }
+  .legal-section { padding: 148px 0 96px; }
+  .legal-content { max-width: 760px; }
+  .legal-content h1 { font-size: clamp(2.6rem, 4.5vw, 3.8rem); line-height: 1.05; }
+  .legal-updated {
+    margin-top: 0.9rem;
+    color: var(--muted);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .legal-content > p {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--soft);
+    font-size: 1.02rem;
+    line-height: 1.72;
+  }
+  .legal-content h2 {
+    margin-top: 2.6rem;
+    font-size: clamp(1.35rem, 2vw, 1.7rem);
+    line-height: 1.2;
+  }
+  .legal-content h2 + p { margin-top: 1rem; padding-top: 0; border-top: 0; }
+  .legal-content a { color: var(--accent); }
+  .legal-content a:hover { color: var(--cream); }
+</style>

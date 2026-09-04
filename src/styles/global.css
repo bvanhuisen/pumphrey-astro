@@ -2008,6 +2008,11 @@ blockquote cite {
   font-size: 0.86rem;
   line-height: 1.55;
 }
+.cookie-consent-inner p a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+.cookie-consent-inner p a:hover { color: var(--cream); }
 .cookie-consent-actions {
   display: flex;
   flex-wrap: wrap;
