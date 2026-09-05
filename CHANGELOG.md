@@ -20,3 +20,11 @@ The site immediately before this change is saved at git commit
 careers content"). To fully remove the cookie banner and privacy policy
 and restore the site to that exact state, revert to that commit (ask
 Claude, or run `git revert 85d8fed` / `git reset --hard 938e481` and push).
+
+## 2026-09-05 — Fixed Vercel auto-deploy
+
+Vercel's GitHub App was scoped to "only select repositories" and this repo
+was not on that list, so pushes to `main` were never triggering a
+deployment (the live site was stuck on the June 17 build). Repository
+access was updated to include this repo, and this commit is the first
+push meant to confirm deployments fire automatically again.
